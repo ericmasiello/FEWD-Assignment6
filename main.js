@@ -19,6 +19,12 @@ $(document).ready(function() {
       bodyClass = 'sydney';
     }
 
-    $('body').removeClass('nyc sf la atx sydney').addClass(bodyClass);
+    $('body')
+      .removeClass('nyc')
+      .removeClass('sf')
+      .removeClass('la')
+      .removeClass('austin')
+      .removeClass('sydney')
+      .addClass(bodyClass);  
   }
 });
