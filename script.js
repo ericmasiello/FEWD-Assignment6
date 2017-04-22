@@ -7,36 +7,36 @@ $(document).ready(function() {
 //	Establish variable for storage of entries
 
 		var city = $("#city-type").val();
-		var otherName = $("city-type");
+		var city = city.toLowerCase();
 
 //	Convert all entered strings to Lower Case
 
-		if ('city-type'.toLowerCase() === 'otherName'.toLowerCase())
+
 
 //	Add Classes when certain search terms are invoked
 
-		if (city === 'la'|| city === "Los Angeles" || city === "LA") {
+		if (city === 'la'|| city === "los Angeles" || city === "la") {
 			$("body").removeClass("nyc sf la austin sydney");
 			$("body").addClass("la");
 
 		}
 
-		if (city === "NY" || city === "New York City" || city === "NYC" || city === "nyc" || city === "ny"){
+		if (city === "ny" || city === "new york city" || city === "nyc" || city === "nyc" || city === "ny"){
 			$("body").removeClass("nyc sf la austin sydney");
 			$("body").addClass("nyc");
 		}
 
-		if (city === "SF" || city === "San Francisco" || city === "sf"){
+		if (city === "sf" || city === "san francisco" || city === "sf"){
 			$("body").removeClass("nyc sf la austin sydney");
 			$("body").addClass("sf");
 		}
 
-		if (city === "Austin" || city === "ATX" || city === "atx" || city === "austin"){
+		if (city === "austin" || city === "atx"){
 			$("body").removeClass("nyc sf la austin sydney");
 			$("body").addClass("austin");
 		}
 
-		if (city === "Sydney" || city === "SYD" || city === "syd" || city === "sydney"){
+		if (city === "sydney" || city === "syd" || city === "syd"){
 			$("body").removeClass("nyc sf la austin sydney");
 			$("body").addClass("sydney");
 		}
