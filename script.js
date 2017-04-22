@@ -1,7 +1,7 @@
 
 //Ensure javascript is loaded after html/css
 $(document).ready(function() {
-	$('#submit-btn').click(function(event){
+	$('form').submit(function(event){
 		event.preventDefault();
 
 //Establish variable for storage of entries
