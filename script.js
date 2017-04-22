@@ -1,13 +1,19 @@
 
-//Ensure javascript is loaded after html/css
+//	Ensure javascript is loaded after html/css
 $(document).ready(function() {
 	$('form').submit(function(event){
 		event.preventDefault();
 
-//Establish variable for storage of entries
+//	Establish variable for storage of entries
 
 		var city = $("#city-type").val();
-// Add Classes when certain search terms are invoked
+		var otherName = $("city-type");
+
+//	Convert all entered strings to Lower Case
+
+		if ('city-type'.toLowerCase() === 'otherName'.toLowerCase())
+
+//	Add Classes when certain search terms are invoked
 
 		if (city === 'la'|| city === "Los Angeles" || city === "LA") {
 			$("body").removeClass("nyc sf la austin sydney");
