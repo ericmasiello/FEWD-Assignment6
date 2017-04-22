@@ -20,12 +20,11 @@ $(document).ready(function() {
 
         city = city.toLowerCase();     
 
-        if(city === "nyc" || city === "new york city") {
-            $("body").addClass("nyc").removeClass("la austin sydney sf");
-           /// does whatever is inside here              
+        if(city === "nyc" || city === "new york city"|| city === "new york") {
+            $("body").addClass("nyc").removeClass("la austin sydney sf"); 
         }
 
-        if(city === "la" || city === "los angles") {
+        if(city === "la" || city === "los angles" || city === "lax") {
             $("body").addClass("la").removeClass("nyc austin sydney sf");
         }
 
@@ -37,7 +36,7 @@ $(document).ready(function() {
             $("body").addClass("austin").removeClass("nyc la austin sf");
         }
 
-        if(city === "san francisco" || city === "sf") {
+        if(city === "san francisco" || city === "sf" || city === "bay area") {
             $("body").addClass("austin").removeClass("nyc la sydney austin");
         }
     });
