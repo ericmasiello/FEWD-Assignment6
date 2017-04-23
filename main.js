@@ -5,7 +5,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     var city = $('#city-type').val().toLowerCase();
-    var bodyClass;
+    var bodyClass = '';
 
     if (city === 'new york' || city === 'new york city' || city === 'nyc') {
       bodyClass = 'nyc';
@@ -18,13 +18,9 @@ $(document).ready(function() {
     } else if (city === 'sydney' || city === 'syd') {
       bodyClass = 'sydney';
     }
-
-    $('body')
-      .removeClass('nyc')
-      .removeClass('sf')
-      .removeClass('la')
-      .removeClass('austin')
-      .removeClass('sydney')
-      .addClass(bodyClass);  
+    
+    // Remove all the different city classes from the 'body'
+    // then just add the one that matched
+    $('body').removeClass('nyc sf la austin sydney').addClass(bodyClass);  
   }
 });
