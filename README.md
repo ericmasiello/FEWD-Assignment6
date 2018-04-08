@@ -1,4 +1,4 @@
-# FEWD Week #5: More JavaScript
+# FEWD Assignment #6: More JavaScript
 
 
 ---
