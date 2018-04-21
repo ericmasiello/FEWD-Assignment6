@@ -39,7 +39,7 @@ JavaScript is powerful: we're able to take user interaction and information and 
 - Create ```if / else if / else``` conditionals to control the flow of your application
 - Write at least six different lines of pseudocode and display them inline as JavaScript comments
 - Prevent a form submission using the ```event.preventDefault()``` function
-- Use the ```$.ready()``` handler to delay your code from executing until all DOM assets have been loaded
+- If necessary, use the ```$.ready()``` handler to delay your code from executing until all DOM assets have been loaded
 - Use the ```||``` operator in your conditionals to allow for multiple string values to execute ```if/else if``` statement code
 - If a user submits:
 
