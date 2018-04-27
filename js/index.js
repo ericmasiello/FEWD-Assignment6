@@ -16,15 +16,20 @@ function cityInput(event) {
   event.preventDefault();
   var city = $('#city-type').val();
   if (city === 'NYC' || city === 'New York' || city === 'New York City') {
-    $('body').addClass('nyc').removeClass('sf').removeClass('la').removeClass('austin').removeClass('sydney');
+    $('body').removeClass();
+    $('body').addClass('nyc');
   } else if (city === 'San Francisco' || city === 'SF' || city === 'Bay Area') {
-    $('body').addClass('sf').removeClass('nyc').removeClass('la').removeClass('austin').removeClass('sydney');
+    $('body').removeClass();
+    $('body').addClass('sf');
   } else if (city === 'Los Angeles' || city === 'LA' || city === 'LAX') {
-    $('body').addClass('la').removeClass('nyc').removeClass('sf').removeClass('austin').removeClass('sydney');
+    $('body').removeClass();
+    $('body').addClass('la');
   } else if (city === 'Austin' || city === 'ATX') {
-    $('body').addClass('austin').removeClass('nyc').removeClass('sf').removeClass('la').removeClass('sydney');
+    $('body').removeClass();
+    $('body').addClass('austin');
   } else if (city === 'Sydney' || city === 'SYD') {
-    $('body').addClass('sydney').removeClass('nyc').removeClass('sf').removeClass('la').removeClass('austin');
+    $('body').removeClass();
+    $('body').addClass('sydney');
   }
 }
 
