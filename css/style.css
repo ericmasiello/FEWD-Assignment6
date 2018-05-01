@@ -142,7 +142,12 @@ header {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
+.error {
+  width: 750px;
+  height: 300px;
+  color: gray;
+  font-family: helvetica, arial, sans-serif;  
+}
 
 
 
