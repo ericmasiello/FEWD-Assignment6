@@ -14,8 +14,32 @@ function findCity(event) {
   console.log('submitting the form');
 
   var city = $('#city-type').val();
+  city = city.toLowerCase();
+    
+  if (city === 'new york' || city === 'new york city'|| city === 'ny' || city === 'nyc') {
+    $('body').removeClass().addClass('nyc');
+  } else if (city === 'san francisco' || city === 'san fran' || city === 'bay area' || city === 'sf') {
+    $('body').removeClass().addClass('sf');           
+  } else if (city === 'los angeles' || city === 'la' || city === 'lax') {
+    $('body').removeClass().addClass('la');           
+  } else if (city === 'austin' || city === 'atx') {
+    $('body').removeClass().addClass('austin');
+  } else if (city === 'sydney' || city === 'syd') {
+    $('body').removeClass().addClass('sydney');      
+  } else {
+    $('body').removeClass();
+    return error(); //using an alert box, but how can I make a popup?
+    event.default();
+    }  
+  }
   
-    if (city.toLowerCase().toUpperCase() === 'New York'.toLowerCase().toUpperCase() || city.toLowerCase().toUpperCase() === 'New York City'.toLowerCase().toUpperCase() || city.toLowerCase().toUpperCase() === 'NY'.toLowerCase().toUpperCase() || city.toLowerCase().toUpperCase() === 'NYC'.toLowerCase().toUpperCase()) {
+  $('#submit-btn').click(findCity);
+
+
+
+//long code
+/*  
+  if (city.toLowerCase().toUpperCase() === 'New York'.toLowerCase().toUpperCase() || city.toLowerCase().toUpperCase() === 'New York City'.toLowerCase().toUpperCase() || city.toLowerCase().toUpperCase() === 'NY'.toLowerCase().toUpperCase() || city.toLowerCase().toUpperCase() === 'NYC'.toLowerCase().toUpperCase()) {
       $('body').removeClass();
       $('body').addClass('nyc');
     } else if (city.toLowerCase().toUpperCase() === 'San Francisco'.toLowerCase().toUpperCase() || city.toLowerCase().toUpperCase() === 'San Fran'.toLowerCase().toUpperCase() || city.toLowerCase().toUpperCase() === 'Bay Area'.toLowerCase().toUpperCase() || city.toLowerCase().toUpperCase() === 'SF'.toLowerCase().toUpperCase()) {
@@ -34,9 +58,10 @@ function findCity(event) {
       $('body').removeClass();
       return error(); //using an alert box, but how can I make a popup?
       event.default();
-    }  
+    }
+  
 }
 
 $('#submit-btn').click(findCity);
 
-
+*/
